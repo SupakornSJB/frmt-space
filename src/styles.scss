@@ -1,1 +1,107 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.bellefair-regular {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.barlow-regular {
+  font-family: "Barlow", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.barlow-condensed-regular {
+  font-family: "Barlow Condensed", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-preset-1 {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 144px;
+  line-height: 171.9%;
+  letter-spacing: 0;
+}
+
+.text-preset-2 {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+  line-height: 114.6%;
+  letter-spacing: 0;
+}
+
+.text-preset-3 {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 56px;
+  line-height: 164.2%;
+  letter-spacing: 0;
+}
+
+.text-preset-4 {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 136.7%;
+  letter-spacing: 0;
+}
+
+.text-preset-5 {
+  font-family: "Barlow Condensed", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 133.6%;
+  letter-spacing: 4px;
+}
+
+.text-preset-6 {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 132.1%;
+  letter-spacing: 0;
+}
+
+.text-preset-7 {
+  font-family: "Barlow Condensed", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 116.8%;
+  letter-spacing: 2px;
+}
+
+.text-preset-8 {
+  font-family: "Barlow Condensed", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 119.2%;
+  letter-spacing: 2px;
+}
+
+.text-preset-9 {
+  font-family: "Barlow", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0;
+}

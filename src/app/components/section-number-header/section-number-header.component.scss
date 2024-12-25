@@ -1,0 +1,19 @@
+:host {
+  width: 100%;
+}
+
+header {
+  align-self: start;
+  position: relative;
+
+  span {
+    text-align: left;
+    color: white;
+  }
+
+  span:first-child {
+    font-weight: bold;
+    margin-right: 20px;
+    opacity: 0.6;
+  }
+}

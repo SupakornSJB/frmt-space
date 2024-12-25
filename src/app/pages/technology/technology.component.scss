@@ -1,0 +1,31 @@
+.page {
+  height: 100%;
+  width: 100%;
+  background-image: url(./../../../../public/assets/technology/background-technology-desktop.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+
+  main {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    section {
+      width: 50%;
+    }
+  }
+
+  * {
+    color: white;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

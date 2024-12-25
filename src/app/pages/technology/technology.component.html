@@ -1,0 +1,17 @@
+<div class="page">
+  <div class="container">
+    <app-section-number-header [sectionNumber]="3" title="Space Launch 101">
+    </app-section-number-header>
+    <main>
+      <app-index-circular-selector-with-num [currentIndex]="dataService.currentTechnologyIndex"
+        [numberOfChoices]="dataService.data.technology.length" (onIndexPress)="setTechnologyIndex($event)">
+      </app-index-circular-selector-with-num>
+      <section>
+        <header class="text-preset-4 uppercase">The terminology</header>
+        <h1 class="text-preset-3 uppercase">{{dataService.currentTechnology.name}}</h1>
+        <article class="text-preset-9">{{dataService.currentTechnology.description}}</article>
+      </section>
+      <img [src]="dataService.currentTechnology.images.portrait">
+    </main>
+  </div>
+</div>

@@ -1,0 +1,95 @@
+.page {
+  height: 100%;
+  width: 100%;
+  background-image: url(./../../../../public/assets/destination/background-destination-desktop.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 60%;
+  gap: 50px;
+
+}
+
+.sub-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+
+  h1,
+  h3,
+  article {
+    color: white;
+  }
+
+  section {
+    width: 50%;
+  }
+
+  section>* {
+    margin-bottom: 20px;
+  }
+
+  section nav {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+
+    div.route-selector {
+      cursor: pointer;
+      color: white;
+      opacity: 0.7;
+      transition: 200ms;
+      height: 70px;
+      width: 70px;
+      position: relative;
+
+      h3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        color: white;
+      }
+    }
+
+    div.route-selector.selected {
+      h3 {
+        opacity: 1;
+      }
+    }
+
+    div.route-selector.selected::after {
+      content: "";
+      border: 1.5px solid white;
+      width: 100%;
+      display: block;
+      position: absolute;
+      bottom: 0%;
+    }
+
+    div.route-selector:hover::after {
+      content: "";
+      border: 1.5px solid white;
+      width: 100%;
+      display: block;
+      position: absolute;
+      bottom: 0%;
+    }
+  }
+}
+
+hr {
+  height: 1px;
+  border: none;
+  background-color: #fff;
+  color: #fff;
+  opacity: 25%;
+}

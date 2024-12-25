@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  gap: 20px;
+}
+
+.circular-button {
+  --button-size: 30px;
+  height: var(--button-size);
+  width: var(--button-size);
+  border-radius: 999px;
+  background-color: white;
+  opacity: 0.5;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.circular-button:hover {
+  opacity: 0.7;
+}
+
+.circular-button.selected {
+  opacity: 1;
+}

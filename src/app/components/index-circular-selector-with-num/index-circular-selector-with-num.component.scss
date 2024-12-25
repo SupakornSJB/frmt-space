@@ -1,0 +1,39 @@
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 999px;
+  background-color: transparent;
+  transition: 300ms;
+  border: 1px solid white;
+  position: relative;
+  cursor: pointer;
+  opacity: 0.6;
+
+  p {
+    position: absolute;
+    color: white;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+  }
+}
+
+.logo.selected {
+  background-color: white;
+  opacity: 1;
+
+  p {
+    color: black;
+  }
+}
+
+.logo:hover {
+  opacity: 1;
+}
+
+.selector-button-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 20px;
+}
