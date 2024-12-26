@@ -2,7 +2,7 @@
 
 ## Note
 
-**This is a work in progress, See the progres in the [The challenge](#the-challenge) below**
+**This is a work in progress, See the progress in the [The challenge](#the-challenge) below**
 
 This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -43,8 +43,8 @@ Users should be able to:
 
 ### Built with
 
-- [Angular](https://reactjs.org/) - JS library
-- [SCSS](https://nextjs.org/) - React framework
+- [Angular](https://angular.dev/) - Frontend Framework
+- [SCSS](https://sass-lang.com) - CSS
 
 ### What I learned
 
