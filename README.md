@@ -16,6 +16,7 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
 - [Author](#author)
+- [Acknowledgement](#acknowledgement)
 
 ## Overview
 
@@ -56,3 +57,9 @@ I think I learned quite a lot of CSS concepts, but not so much more Angular sinc
 - Frontend Mentor - [@SupakornSJB](https://www.frontendmentor.io/profile/SupakornSJB)
 - Github [SupakornSJB](https://github.com/SupakornSJB)
 - linkedIn - [Supakorn](https://www.linkedin.com/in/supakorn-senlamai/)
+
+## Acknowledgement
+
+Thank you very much to [Frontend Mentor](https://www.frontendmentor.io) for the beautiful design and the opportunity!
+
+If you are looking for multiple beautiful projects to hone your frontend skills, be sure to check them out!
