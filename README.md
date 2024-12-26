@@ -1,59 +1,58 @@
-# FrmtSpace
+# Frontend Mentor - Space tourism website solution
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+## Note
 
-## Development server
+**This is a work in progress, See the progres in the [The challenge](#the-challenge) below**
 
-To start a local development server, run:
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-```bash
-ng serve
-```
+## Table of contents
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
 
-## Code scaffolding
+## Overview
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### The challenge
 
-```bash
-ng generate component component-name
-```
+Users should be able to:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- [X] View each page and be able to toggle between the tabs to see new information
+- [] View the optimal layout for each of the website's pages depending on their device's screen size
+- [] See hover states for all interactive elements on the page
 
-```bash
-ng generate --help
-```
+### Screenshot
 
-## Building
+![Home Page](./screenshots/Home.png)
+![Destination Page](./screenshots/Destination.png)
+![Crew Page](./screenshots/Crew.png)
+![Technology Page](./screenshots/Technology.png)
 
-To build the project run:
+### Links
 
-```bash
-ng build
-```
+- Link to Site (Github Page: Coming Soon)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## My process
 
-## Running unit tests
+### Built with
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- [Angular](https://reactjs.org/) - JS library
+- [SCSS](https://nextjs.org/) - React framework
 
-```bash
-ng test
-```
+### What I learned
 
-## Running end-to-end tests
+I started this project wanted to mainly learn more about Angular and CSS.
 
-For end-to-end (e2e) testing, run:
+I think I learned quite a lot of CSS concepts, but not so much more Angular since this project does not necessarily require much interactivity
 
-```bash
-ng e2e
-```
+## Author
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Frontend Mentor - [@SupakornSJB](https://www.frontendmentor.io/profile/SupakornSJB)
+- Github [SupakornSJB](https://github.com/SupakornSJB)
+- linkedIn - [Supakorn](https://www.linkedin.com/in/supakorn-senlamai/)
