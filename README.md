@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Link to Site (Github Page: Coming Soon)
+- [Link To Site (GitHubPage)](https://supakornsjb.github.io/frmt-space/)
 
 ## My process
 
