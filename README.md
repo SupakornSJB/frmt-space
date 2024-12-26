@@ -24,8 +24,8 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 Users should be able to:
 
 - [X] View each page and be able to toggle between the tabs to see new information
-- [] View the optimal layout for each of the website's pages depending on their device's screen size
-- [] See hover states for all interactive elements on the page
+- [ ] View the optimal layout for each of the website's pages depending on their device's screen size
+- [ ] See hover states for all interactive elements on the page
 
 ### Screenshot
 
