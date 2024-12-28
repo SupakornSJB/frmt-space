@@ -1,14 +1,19 @@
 <div class="page-container">
   <header class="nav-header">
-    <img src="assets/shared/logo.svg" height="40" width="40" (click)="navigateToRoute('')" />
+    <img src="assets/shared/logo.svg" height="40" width="40" (click)="navigatorService.navigateToRoute('')" />
     <hr>
-    <nav>
-      <div *ngFor="let title of navigatable; index as i" class="nav-item" [class.selected]="isCurrentRoute(title)"
-        (click)="navigateToRoute(title)">
-        <span class="text-preset-8">{{"0" + i}}</span>
-        <li class="text-preset-8">{{title | uppercase}}</li>
-      </div>
-    </nav>
+    <app-navigator *ngIf="!isSmallScreen" [isVertical]='false'></app-navigator>
+    <button *ngIf="isSmallScreen" (click)="toggleNavBar()" class="nav-button">
+      <img src='assets/shared/icon-hamburger.svg' height="20" width="20">
+    </button>
   </header>
   <router-outlet></router-outlet>
+  <div *ngIf="isNavbarShowing" class="vertical-nav">
+    <div class="row-button">
+      <button (click)="toggleNavBar()" class="nav-button">
+        <img src="assets/shared/icon-close.svg" height="20" width="20">
+      </button>
+    </div>
+    <app-navigator [isVertical]="true" (onRouteSelected)="toggleNavBar()"></app-navigator>
+  </div>
 </div>

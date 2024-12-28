@@ -4,11 +4,21 @@
   box-sizing: border-box;
 }
 
+img {
+  cursor: pointer;
+  transition: 300ms;
+}
+
+img:hover {
+  scale: 1.1
+}
+
 .page-container {
   height: 100vh;
   width: 100vw;
   position: relative;
   background: black;
+  overflow-x: hidden;
 }
 
 .nav-header {
@@ -28,14 +38,6 @@
     border-radius: 1000px;
   }
 
-  img {
-    cursor: pointer;
-    transition: 300ms;
-  }
-
-  img:hover {
-    scale: 1.1
-  }
 
   hr {
     flex-grow: 1;
@@ -49,71 +51,33 @@
     opacity: 25%;
   }
 
-  nav {
-    --padding-y: 35px;
-    --padding-x: 100px;
-    display: flex;
-    gap: 10px;
-    padding-left: var(--padding-x);
-    padding-right: var(--padding-x);
-    // padding-top: var(--padding-y);
-    // padding-bottom: var(--padding-y);
-    backdrop-filter: blur(10px);
-
-    .nav-item {
-      cursor: pointer;
-      opacity: 0.8;
-      transition: opacity 200ms;
-      padding-top: var(--padding-y);
-      padding-bottom: var(--padding-y);
-      position: relative;
-
-      span,
-      li {
-        color: white;
-        list-style: none;
-        display: inline;
-      }
-
-      span {
-        font-weight: bold;
-      }
-
-      li {
-        margin-left: 10px;
-      }
-    }
-
-    .nav-item.selected {
-
-      span,
-      li {
-        opacity: 1;
-      }
-    }
-
-    .nav-item.selected::after {
-      content: "";
-      display: block;
-      border: 1.5px solid white;
-      opacity: 1;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-    }
-
-    .nav-item:hover {
-      opacity: 1;
-    }
-
-    .nav-item:hover::after {
-      content: "";
-      display: block;
-      border: 1.5px solid white;
-      opacity: 0.6;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
+  @media screen and (max-width: 1080px) {
+    hr {
+      display: none;
     }
   }
+}
+
+.vertical-nav {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-button {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.row-button {
+  padding-top: 20px;
+  padding-right: 20px;
+  text-align: end;
 }

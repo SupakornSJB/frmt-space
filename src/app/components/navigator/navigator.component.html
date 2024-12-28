@@ -1,0 +1,7 @@
+<nav [class.nav-vertical]="isVertical">
+  <div *ngFor="let title of navigateService.navigatable; index as i" class="nav-item"
+    [class.selected]="navigateService.isCurrentRoute(title)" (click)="selectRoute(title)">
+    <span class="text-preset-8">{{"0" + i}}</span>
+    <li class="text-preset-8">{{title | uppercase}}</li>
+  </div>
+</nav>

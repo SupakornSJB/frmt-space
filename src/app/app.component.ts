@@ -1,38 +1,33 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
-import { filter } from 'rxjs/internal/operators/filter';
+import { RouterOutlet } from '@angular/router';
+import { NavigatorComponent } from './components/navigator/navigator.component';
+import { NavigateService } from './services/navigate.service';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CommonModule],
+  imports: [RouterOutlet, CommonModule, NavigatorComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  navigatable = ["Home", "Destination", "Crew", "Technology"];
-  categories: Record<string, boolean>;
+  isSmallScreen: boolean = false;
+  isNavbarShowing: boolean = false;
 
-  constructor(private router: Router) {
-    this.categories = this.navigatable.reduce<Record<string, boolean>>((acc, current) => {
-      acc[current] = false;
-      return acc;
-    }, {})
-
-    this.router.events
-      .pipe((filter((event) => event instanceof NavigationEnd)))
-      .subscribe((event: NavigationEnd) => {
-        for (let route of Object.keys(this.categories)) {
-          this.categories[route] = event.url.toLowerCase().includes(route.toLowerCase())
-        }
-      })
+  constructor(
+    public navigatorService: NavigateService,
+    public breakpointObserver: BreakpointObserver
+  ) {
+    this.breakpointObserver.observe([
+      Breakpoints.Handset,
+    ]).subscribe((result) => {
+      this.isSmallScreen = result.matches;
+      if (!result.matches) this.isNavbarShowing = false;
+    })
   }
 
-  navigateToRoute(routeName: string): void {
-    this.router.navigateByUrl("/" + routeName.toLowerCase());
-  }
-
-  isCurrentRoute(routeName: string) {
-    return this.router.url.includes(routeName.toLowerCase());
+  toggleNavBar() {
+    this.isNavbarShowing = !this.isNavbarShowing;
   }
 }

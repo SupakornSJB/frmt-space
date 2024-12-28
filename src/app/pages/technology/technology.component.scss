@@ -11,18 +11,52 @@
 .container {
   width: 80%;
 
-  main {
+  main,
+  .text-content-container {
     display: flex;
     align-items: center;
     gap: 50px;
+  }
 
-    section {
-      width: 50%;
-    }
+  .text-content-container {
+    max-width: 50%;
   }
 
   * {
     color: white;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .page {
+    justify-content: center;
+  }
+
+  .container {
+    width: 90%;
+
+    img {
+      width: 100vw;
+    }
+  }
+
+  main {
+    flex-direction: column-reverse;
+  }
+
+  .text-content-container {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100% !important;
+
+    section {
+
+      header,
+      h1,
+      article {
+        text-align: center;
+      }
+    }
   }
 }
 

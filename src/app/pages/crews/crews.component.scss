@@ -34,6 +34,34 @@
       header {
         opacity: 0.5;
       }
+
+      @media screen and (max-width: 1080px) {
+
+        header,
+        h1,
+        article {
+          text-align: center;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1080px) {
+      section {
+        gap: 0px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1080px) {
+    main {
+      gap: 20px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: end;
+
+      img {
+        height: 50vh;
+      }
     }
   }
 
@@ -45,5 +73,18 @@
 
 .crew-selector-container {
   position: absolute;
+  padding-top: 20px;
   bottom: 0;
+}
+
+@media screen and (max-width: 1080px) {
+  .container {
+    width: 80%;
+    justify-content: end;
+    gap: 20px;
+  }
+
+  .crew-selector-container {
+    position: static;
+  }
 }

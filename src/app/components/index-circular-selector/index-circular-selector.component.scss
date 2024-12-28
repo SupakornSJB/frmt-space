@@ -5,6 +5,12 @@
   gap: 20px;
 }
 
+@media screen and (max-width: 1080px) {
+  .container {
+    justify-content: center;
+  }
+}
+
 .circular-button {
   --button-size: 30px;
   height: var(--button-size);
